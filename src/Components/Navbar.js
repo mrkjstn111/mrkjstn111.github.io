@@ -15,7 +15,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-slate-200 dark:bg-gray-800 fixed w-full">
+    <Disclosure as="nav" className="bg-slate-500 dark:bg-gray-900">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -35,12 +35,12 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   {/* <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
+                    className="h-8 w-auto me-3 border-2 border-orange-600 rounded-full"
+                    src="https://avatars.githubusercontent.com/u/88678036?v=4"
+                    alt="mrkjstn111"
                   /> */}
                   <a href='/'>
-                  <span className='text-black dark:text-white'>mrkjstn111.github.io</span>
+                  <span className='text-slate-200'>mrkjstn111.github.io</span>
                   </a>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -50,7 +50,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-800 hover:text-white',
+                          item.current ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-800 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium uppercase'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -72,7 +72,7 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium uppercase'
                   )}
                   aria-current={item.current ? 'page' : undefined}
