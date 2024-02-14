@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
         <React.StrictMode>
-          <Navbar/>
+          {/* <Navbar/> */}
           <RouterProvider router={router} />
         </React.StrictMode>
     </div>

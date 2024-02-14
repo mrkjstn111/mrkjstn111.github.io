@@ -15,11 +15,11 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-slate-500 dark:bg-gray-900">
+    <Disclosure as="nav" className="bg-white border border-b-2">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
+            <div className="relative flex h-12 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -40,7 +40,7 @@ export default function Navbar() {
                     alt="mrkjstn111"
                   /> */}
                   <a href='/'>
-                  <span className='text-slate-200'>mrkjstn111.github.io</span>
+                  <span className='font-semibold text-black'>mrkjstn111.github.io</span>
                   </a>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -50,8 +50,8 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-800 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium uppercase'
+                          item.current ? 'text-gray-500' : 'text-slate-400  hover:text-slate-300',
+                          'rounded-md px-3 py-2 text-sm font-sm'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
